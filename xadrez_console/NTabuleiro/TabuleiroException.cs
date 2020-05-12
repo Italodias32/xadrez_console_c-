@@ -1,0 +1,11 @@
+﻿using System;
+
+namespace NTabuleiro
+{
+    class TabuleiroException : Exception
+    {
+        public TabuleiroException(string message) : base(message)
+        {
+        }
+    }
+}
