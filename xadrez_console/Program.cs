@@ -15,7 +15,11 @@ namespace xadrez_console
                 tabuleiro.ColocarPeca(new Torre(tabuleiro, Cor.Preta), new Posicao(0, 0));
                 tabuleiro.ColocarPeca(new Cavalo(tabuleiro, Cor.Preta), new Posicao(1, 3));
                 tabuleiro.ColocarPeca(new Dama(tabuleiro, Cor.Preta), new Posicao(2, 4));
-                tabuleiro.ColocarPeca(new Cavalo(tabuleiro, Cor.Preta), new Posicao(0, 9));
+                tabuleiro.ColocarPeca(new Cavalo(tabuleiro, Cor.Preta), new Posicao(0, 7));
+
+               PosicaoXadrez posicaoXadrez = new PosicaoXadrez('a', 1);
+
+                tabuleiro.ColocarPeca(new Bispo(tabuleiro, Cor.Preta), posicaoXadrez.ToPosicao());
 
                 Tela.ImprimirTabuleiro(tabuleiro);
 
